@@ -1,0 +1,31 @@
+# --- Sistema Operativo ---
+.DS_Store
+thumbs.db
+desktop.ini
+
+# --- Editores de código ---
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# --- Python (Si lo usas) ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# --- Node.js / Backend ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Archivos de registro y temporales ---
+*.log
+temp/
+tmp/
+
+# --- Otros archivos ---
+secreto.txt
+
