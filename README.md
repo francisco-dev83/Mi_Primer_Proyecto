@@ -19,3 +19,7 @@ Para replicar este proyecto localmente, sigue estos pasos:
 
 ## ⚙️ Configuración
 He configurado un archivo `.gitignore` para evitar subir archivos innecesarios como temporales del sistema o carpetas de configuración de entorno.
+
+##Flujo de Trabajo
+Para éste proyecto utilicé un flujode ramas(Git Flow). Trabajé las funcionalidades en la rama "desarrollo" y, tras verificar que todo funcionaba, las integré en larama "main" antes de subir el resultado final.
+
