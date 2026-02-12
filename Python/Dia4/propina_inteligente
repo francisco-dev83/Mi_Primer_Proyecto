@@ -1,0 +1,10 @@
+propina = int(input("¿Qué porcentaje de propina vas a dejar? "))
+
+if propina == 0:
+    print("Vaya, parece que el servicio no fue muy bueno...")
+elif propina < 10:
+    print("Es una propina correcta, gracias.")
+elif propina <= 20:
+    print("¡Muchas gracias! Es una propina generosa.")
+else:
+    print("¡Wow! ¡Te has lucido, eres muy generoso!")
