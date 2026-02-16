@@ -40,8 +40,7 @@ def dividir(a: float, b: float) -> float:
     """
     if b == 0:
         return None
-    else:
-        return a / b
+    return a / b
 
 def main():
     while True:
@@ -74,7 +73,7 @@ def main():
             a = float(input("Dame el dividendo: "))
             b = float(input("Dame el divisor: "))
             c = dividir(a, b)
-            if c == None:
+            if c is None:
                 print("Error: El divisor deve ser diferente de 0") 
             else:
                 print(f"El resultado es: {c}")
