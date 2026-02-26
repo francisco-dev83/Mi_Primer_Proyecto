@@ -1,0 +1,16 @@
+{
+    "productos": {
+        "monitor": {
+            "precio": 150.0,
+            "stock": 7
+        },
+        "raton": {
+            "precio": 25.0,
+            "stock": 45
+        }
+    },
+    "categorias": [
+        "periféricos",
+        "imagen"
+    ]
+}
