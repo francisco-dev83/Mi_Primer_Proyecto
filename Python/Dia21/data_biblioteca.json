@@ -1,0 +1,32 @@
+{
+    "libros": {
+        "111": {
+            "titulo": "Cien años de soledad",
+            "autor": "García Márquez",
+            "isbn": "111",
+            "formato": "Papel",
+            "genero": "Realismo Mágico",
+            "prestado": true
+        },
+        "222": {
+            "titulo": "Python Crash Course",
+            "autor": "Eric Matthes",
+            "isbn": "222",
+            "formato": "Digital",
+            "genero": "Tecnología",
+            "prestado": false
+        }
+    },
+    "usuarios": {
+        "12345X": {
+            "dni": "12345X",
+            "nombre": "Francisco",
+            "apellidos": "Pérez",
+            "edad": 30,
+            "es_socio": true,
+            "libros_en_prestamo": [
+                "111"
+            ]
+        }
+    }
+}

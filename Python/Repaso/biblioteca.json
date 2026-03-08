@@ -1,0 +1,39 @@
+{
+    "libros": {
+        "978-01": {
+            "isbn": "978-01",
+            "titulo": "Cien a\u00f1os de soledad",
+            "autor": "Gabriel Garc\u00eda M\u00e1rquez",
+            "usuario_actual": null
+        },
+        "978-02": {
+            "isbn": "978-02",
+            "titulo": "1984",
+            "autor": "George Orwell",
+            "usuario_actual": null
+        },
+        "978-03": {
+            "isbn": "978-03",
+            "titulo": "El Principito",
+            "autor": "Antoine de Saint-Exup\u00e9ry",
+            "usuario_actual": null
+        }
+    },
+    "usuarios": {
+        "S001": {
+            "id_socio": "S001",
+            "nombre": "Francisco",
+            "libros_en_mano": []
+        },
+        "S002": {
+            "id_socio": "S002",
+            "nombre": "Elena",
+            "libros_en_mano": []
+        },
+        "S003": {
+            "id_socio": "S003",
+            "nombre": "Miguel",
+            "libros_en_mano": []
+        }
+    }
+}

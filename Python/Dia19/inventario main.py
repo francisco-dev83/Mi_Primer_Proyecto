@@ -45,9 +45,16 @@ def main():
                 print("Categoría añadida")
             
             case "3":
-                total_stock: float = mi_tienda.calcular_total()
-                print(f"El total del valor del stock es: {total_stock}€")
-    
+                moneda = input("En qué divisa quieres ver el resultado?")
+                if moneda.upper() in ["EUR", ""]:
+                    total_stock: float = mi_tienda.calcular_total()
+                    print(f"El total del valor del stock es: {total_stock}€")
+                else:
+                    divisa = mi_tienda.calcular_total_divisa(moneda)
+                    if divisa is None:
+                        print("No se puede mostrar el valor en esa divisa")
+                    else:
+                        print(f"El total del valor del stock es: {divisa:.2f}")
 
 if __name__ == "__main__":
     main()

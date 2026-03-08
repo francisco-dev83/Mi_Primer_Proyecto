@@ -1,5 +1,6 @@
 import json
 import os # Para comprobar si el archivo existe
+import requests
 from datetime import datetime
 
 class GestorInventario:
@@ -22,6 +23,25 @@ class GestorInventario:
                 "raton": {"precio": 25.0, "stock": 45}
             }
             self._categorias = {"periféricos", "imagen"}
+
+    def calcular_total_divisa(self, moneda_destino="USD"):
+        total_eur = self.calcular_total() # Ya tienes este método hecho
+        url = "https://api.exchangerate-api.com/v4/latest/EUR"
+    
+        try:
+            r = requests.get(url, timeout=5)
+            r.raise_for_status()
+            datos = r.json()
+            
+            cambio = datos["rates"].get(moneda_destino.upper())
+            
+            if cambio:
+                return total_eur * cambio
+            else:
+                return None # Moneda no encontrada
+                
+        except Exception:
+            return None # Error de conexión
     
     def guardar_datos(self):
         datos_a_guardar = {
